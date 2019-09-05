@@ -1,0 +1,69 @@
+
+<html lang="en-us">
+	<head>
+
+	<meta charset="utf-8">
+	<title>Train Schedule</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	
+	<script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+	
+
+	
+</head>
+
+<body>
+
+	<div class = "jumbotron"> 
+		<h1 class="text-center">Train Schedule</h1>
+	</div>
+
+	<br>
+
+	<div class="row">
+		<div class="col-lg-10 col-md-10 col-sm-10">
+			<div class="panel panel-default">
+  				<h3>Arrival Table</h3>
+  			</div>
+
+  			<div>
+  				<table class="table" >
+  			  		<thead>
+  			  			<tr>
+                                <!-- table header is bolded th -->
+  			  				<th>Name</th>
+                            <th>Next Time On Arriving</th>
+                            <th>Frequency</th>
+                            <th>Destination</th>
+  			  				<th>Time Away</th>
+  			  			</tr>
+  			  		</thead>
+					<tbody></tbody> 
+
+  				</table>
+			</div>
+			<br>
+
+			<form>
+			
+				<div class="form-group">
+					
+  					<input type="text" class="form-control"
+  					id="name" placeholder="Train Name">
+                      <input type="text" class="form-control"  placeholder="Frequency">
+                      <input type="text" class="form-control"  placeholder="Train Time">
+                      <input type="text" class="form-control" placeholder="Destination" >
+  			 		<button class="btn btn-primary btn-lg" id="trainInfoBtn" type="submit">Submit</button>
+  				</div>
+  			</form>
+		</div>
+	</div>
+	<script type="train.js"></script>
+</body>
+</html
